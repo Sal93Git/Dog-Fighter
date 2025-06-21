@@ -28,7 +28,7 @@ public class WaveSpawner : MonoBehaviour
     void SpawnWave()
     {
         Vector3 pos = transform.position = new Vector3(
-            UnityEngine.Random.Range(-XSpawnRange, XSpawnRange), 0, UnityEngine.Random.Range(-zSpawnRange, zSpawnRange));
+            UnityEngine.Random.Range(-XSpawnRange, XSpawnRange), transform.position.y, UnityEngine.Random.Range(-zSpawnRange, zSpawnRange));
         GameObject wave = Instantiate(wavePrefab, pos, Quaternion.Euler(0, 0, 0));
         wave.transform.localScale = Vector3.one * UnityEngine.Random.Range(MinSize, MaxSize);
         StartCoroutine(FadeIn(wave));
