@@ -14,7 +14,7 @@ public class PlaneController : MonoBehaviour
 
     public List<GameObject> missiles = new List<GameObject>();
     public int maxMissileAmmo = 2;
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -55,7 +55,7 @@ public class PlaneController : MonoBehaviour
 
        
         // Add upward lift proportional to roll to counter downward drift
-        float liftAmount = Mathf.Abs(roll) * 0.5f; 
+        float liftAmount = Mathf.Abs(roll) * 0.15f; 
         transform.position += Vector3.up * liftAmount * Time.deltaTime;
     
     }
@@ -95,5 +95,9 @@ public class PlaneController : MonoBehaviour
         }
     }
 
+    public float getCurrentSpeed()
+    {
+        return currentSpeed;
+    }
  
 }
