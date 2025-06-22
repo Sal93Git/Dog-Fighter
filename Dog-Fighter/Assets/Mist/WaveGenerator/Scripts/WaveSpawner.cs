@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
+    public GameObject Player;
     public GameObject wavePrefab;
     public float spawnRate = 1f; //lower the faster
     public float lifetime = 3f;
@@ -28,8 +29,8 @@ public class WaveSpawner : MonoBehaviour
     void SpawnWave()
     {
         Vector3 pos = transform.position = new Vector3(
-            UnityEngine.Random.Range(-XSpawnRange, XSpawnRange), transform.position.y, UnityEngine.Random.Range(-zSpawnRange, zSpawnRange));
-        GameObject wave = Instantiate(wavePrefab, pos, Quaternion.Euler(0, 0, 0));
+            UnityEngine.Random.Range(-(Player.transform.position.x + XSpawnRange), (Player.transform.position.x + XSpawnRange)), transform.position.y, UnityEngine.Random.Range(-(Player.transform.position.z + zSpawnRange), (Player.transform.position.z + zSpawnRange)));
+        GameObject wave = Instantiate(wavePrefab, pos, Quaternion.Euler(90, 0, 0)); //set x rotation here
         wave.transform.localScale = Vector3.one * UnityEngine.Random.Range(MinSize, MaxSize);
         StartCoroutine(FadeIn(wave));
         
