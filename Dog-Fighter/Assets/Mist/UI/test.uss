@@ -71,7 +71,7 @@
     left: 520px;
     opacity: 1;
     position: absolute;
-    translate: 206px 0;
+    translate: 343px 0;
 }
 
 .LevelListDefault {

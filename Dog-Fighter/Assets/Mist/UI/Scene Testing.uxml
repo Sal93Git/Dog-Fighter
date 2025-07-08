@@ -1,23 +1,23 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/Mist/UI/test.uss?fileID=7433441132597879392&amp;guid=a21a0ab97c79ca14689e7ae3750afc9c&amp;type=3#test" />
-    <ui:VisualElement name="BlackOverlay" enabled="true" style="flex-grow: 1; color: rgb(0, 0, 0); background-color: rgb(0, 0, 0); align-items: auto; width: 100%; height: 100%; display: flex; visibility: visible; transition-property: all; transition-duration: 0.5s; transition-timing-function: ease; transition-delay: 0s; opacity: 1; overflow: visible;" />
-    <ui:VisualElement name="PostStart" style="flex-grow: 1; background-color: rgb(91, 107, 173); top: 0%; align-items: center; align-content: flex-start; transition-duration: 1s; display: flex;">
-        <ui:VisualElement name="Buttons" focusable="true" enabled="true" class="LevelSelectDefault" style="flex-direction: column; top: 35%; right: auto; display: flex; visibility: visible; position: absolute; left: 728px; opacity: 1;">
-            <ui:Button text="Level Select" name="LevelSelectBut" class="menuButton LevelSelectDefault" style="transition-duration: 1s;" />
-            <ui:Button text="Options" name="OptionsBut" class="menuButton" style="transition-duration: 1s;" />
-            <ui:Button text="Feedback&#10;" name="QuitBut" class="menuButton" style="left: auto; top: auto; -unity-text-align: middle-center; height: 90px; align-items: center; transition-duration: 2s;" />
+    <ui:VisualElement name="BlackOverlay" enabled="true" style="flex-grow: 1; color: rgb(0, 0, 0); background-color: rgb(0, 0, 0); align-items: auto; width: 100%; height: 100%; display: none; visibility: visible; transition-property: all; transition-duration: 0.5s; transition-timing-function: ease; transition-delay: 0s; opacity: 1; overflow: visible;" />
+    <ui:VisualElement name="PostStart" style="flex-grow: 1; background-color: rgb(23, 48, 154); top: 0%; align-items: center; align-content: flex-start; transition-duration: 1s; display: flex;">
+        <ui:VisualElement name="Buttons" focusable="true" enabled="true" class="LevelSelectDefault" style="flex-direction: column; top: 35%; right: auto; display: flex; visibility: visible; position: absolute; left: 45%; opacity: 1;">
+            <ui:Button text="Level Select" name="LevelSelectBut" class="menuButton LevelSelectDefault" style="transition-duration: 1s; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&amp;guid=75447edbbede89046ac67ec299c29c64&amp;type=3#LargeButton&quot;);" />
+            <ui:Button text="Options" name="OptionsBut" class="menuButton" style="transition-duration: 1s; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&amp;guid=75447edbbede89046ac67ec299c29c64&amp;type=3#LargeButton&quot;);" />
+            <ui:Button text="Feedback&#10;" name="QuitBut" class="menuButton" style="left: auto; top: auto; -unity-text-align: middle-center; height: 90px; align-items: center; transition-duration: 2s; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&amp;guid=75447edbbede89046ac67ec299c29c64&amp;type=3#LargeButton&quot;);" />
         </ui:VisualElement>
         <ui:VisualElement name="Levels" enabled="true" class="LevelsDefault LevelListDefault">
-            <ui:Button text="Level 1" name="Level1" class="menuButton" style="width: 200px; height: 90px;" />
-            <ui:Button text="Level 2" name="Level2" class="menuButton" style="width: 200px; height: 90px;" />
-            <ui:Button text="Level 3" name="Level3" class="menuButton" style="width: 200px; height: 90px;" />
-            <ui:Button text="Level 4&#10;" name="Level4" enable-rich-text="true" class="menuButton" style="width: 200px; height: 90px;" />
-            <ui:Button text="Back&#10;" name="BackButton" class="menuButton" style="translate: -210px 0;" />
+            <ui:Button text="Level 1" name="Level1" class="menuButton" style="width: 200px; height: 90px; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&amp;guid=75447edbbede89046ac67ec299c29c64&amp;type=3#LargeButton&quot;);" />
+            <ui:Button text="Level 2" name="Level2" class="menuButton" style="width: 200px; height: 90px; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&amp;guid=75447edbbede89046ac67ec299c29c64&amp;type=3#LargeButton&quot;);" />
+            <ui:Button text="Level 3" name="Level3" class="menuButton" style="width: 200px; height: 90px; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&amp;guid=75447edbbede89046ac67ec299c29c64&amp;type=3#LargeButton&quot;);" />
+            <ui:Button text="Level 4&#10;" name="Level4" enable-rich-text="true" class="menuButton" style="width: 200px; height: 90px; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&amp;guid=75447edbbede89046ac67ec299c29c64&amp;type=3#LargeButton&quot;);" />
+            <ui:Button text="Back&#10;" name="BackButton" class="menuButton" style="translate: -210px 0; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&amp;guid=75447edbbede89046ac67ec299c29c64&amp;type=3#LargeButton&quot;);" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="PreStart" style="position: absolute; top: 748px; left: 775px;">
         <ui:VisualElement name="StartText" enabled="true" style="flex-grow: 1; align-items: center; justify-content: space-around; flex-direction: column-reverse; align-self: stretch; align-content: center;">
-            <ui:Label text="Press any button to start" style="top: 34%;" />
+            <ui:Label text="Press any button to start" style="top: 34%; left: 102px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
