@@ -15,6 +15,8 @@ public class PlaneController : MonoBehaviour
     public List<GameObject> missiles = new List<GameObject>();
     public int maxMissileAmmo = 2;
     
+    [SerializeField] private Transform pilotHead;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,6 +34,8 @@ public class PlaneController : MonoBehaviour
     void Update()
     {
         PlaneMovement();
+        UpdatePilotHeadLean();
+
     }
 
     void PlaneMovement()
@@ -45,18 +49,20 @@ public class PlaneController : MonoBehaviour
             {
                 FireMissile();
             }
+
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                pitch = pitch*30;
+            }
         }
 
-        // transform.Rotate(pitch, 0, -roll, Space.Self);
         transform.Rotate(pitch, 0, -roll);
 
         // Move forward along the tilted forward vector
         transform.position += transform.forward * currentSpeed * Time.deltaTime;
-
-       
         // Add upward lift proportional to roll to counter downward drift
-        float liftAmount = Mathf.Abs(roll) * 0.15f; 
-        transform.position += Vector3.up * liftAmount * Time.deltaTime;
+        //float liftAmount = Mathf.Abs(roll) * 0.15f; 
+        //transform.position += Vector3.up * liftAmount * Time.deltaTime;
     
     }
 
@@ -99,5 +105,30 @@ public class PlaneController : MonoBehaviour
     {
         return currentSpeed;
     }
+
+
+    // Tilt pilots head depending on roll direction
+    void UpdatePilotHeadLean()
+    {
+        if (pilotHead == null) return;
+
+        float horizontalInput = Input.GetAxis("Horizontal");
+
+        float targetLean = 0f;
+
+        // If input is active, lean to the side
+        if (Mathf.Abs(horizontalInput) > 0.1f)
+        {
+            targetLean = Mathf.Clamp(horizontalInput, -1f, 1f) * 30f;
+        }
+
+        // Create a target rotation (leaning head along Z axis) targetLean is negative to correctly simulate head movement when plane rolls
+        Quaternion targetRotation = Quaternion.Euler(0f, 0f, -targetLean);
+
+        // Smoothly lerp to the target rotation
+        pilotHead.localRotation = Quaternion.Slerp(pilotHead.localRotation, targetRotation, Time.deltaTime * 3f);
+    }
+
+
  
 }
