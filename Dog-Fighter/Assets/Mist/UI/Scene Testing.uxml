@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/Mist/UI/test.uss?fileID=7433441132597879392&amp;guid=a21a0ab97c79ca14689e7ae3750afc9c&amp;type=3#test" />
-    <ui:VisualElement name="BlackOverlay" enabled="true" style="flex-grow: 1; color: rgb(0, 0, 0); background-color: rgb(0, 0, 0); align-items: auto; width: 100%; height: 100%; display: flex; visibility: visible; transition-property: all; transition-duration: 0.5s; transition-timing-function: ease; transition-delay: 0s; opacity: 1; overflow: visible;" />
+    <ui:VisualElement name="BlackOverlay" enabled="true" style="flex-grow: 1; color: rgb(0, 0, 0); background-color: rgb(0, 0, 0); align-items: auto; width: 100%; height: 100%; display: none; visibility: visible; transition-property: all; transition-duration: 0.5s; transition-timing-function: ease; transition-delay: 0s; opacity: 1; overflow: visible;" />
     <ui:VisualElement name="PreStart" style="position: absolute; top: 748px; left: 775px;">
         <ui:VisualElement name="StartText" enabled="true" style="flex-grow: 1; align-items: center; justify-content: space-around; flex-direction: column-reverse; align-self: stretch; align-content: center;">
             <ui:Label text="Press any button to start" style="top: 34%; left: -113px; -unity-font-definition: url(&quot;project://database/Assets/Mist/Assets/Font/Matemasie-Regular.ttf?fileID=12800000&amp;guid=97185813d59732748b78040e584b3f40&amp;type=3#Matemasie-Regular&quot;); font-size: 43px; -unity-text-align: upper-center; align-self: center; align-items: center;" />
@@ -10,7 +10,8 @@
         <ui:VisualElement name="Buttons" focusable="true" enabled="true" class="LevelSelectDefault" style="flex-direction: column; top: 57%; right: auto; display: flex; visibility: visible; position: absolute; left: 45%; opacity: 1;">
             <ui:Button text="Level Select" name="LevelSelectBut" class="menuButton LevelSelectDefault" style="transition-duration: 1s;" />
             <ui:Button text="Options" name="OptionsBut" class="menuButton" style="transition-duration: 1s;" />
-            <ui:Button text="Feedback&#10;" name="QuitBut" class="menuButton" style="left: auto; top: auto; -unity-text-align: middle-center; height: 90px; align-items: center; transition-duration: 2s;" />
+            <ui:Button text="Feedback&#10;" name="FeedbackButton" class="menuButton" style="left: auto; top: auto; -unity-text-align: middle-center; height: 90px; align-items: center; transition-duration: 2s;" />
+            <ui:Button text="Quit&#10;" name="QuitBut" class="menuButton" style="left: auto; top: auto; -unity-text-align: middle-center; height: 90px; align-items: center; transition-duration: 2s;" />
         </ui:VisualElement>
         <ui:VisualElement name="Levels" enabled="true" class="LevelsDefault LevelListDefault" style="position: absolute; top: 627px; left: 532px;">
             <ui:Button text="Level 1" name="Level1" class="menuButton" style="width: 200px; height: 90px;" />
@@ -20,5 +21,12 @@
             <ui:Button text="Back&#10;" name="BackButton" class="menuButton" style="translate: -210px 0;" />
         </ui:VisualElement>
         <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/DogFighterLogo.png?fileID=2800000&amp;guid=472367589bab2324d87f1ecd30d02127&amp;type=3#DogFighterLogo&quot;); width: 1052px; -unity-background-scale-mode: scale-to-fit; translate: 0 -329px; position: absolute; top: 352px; height: 528px; left: 428px;" />
+        <ui:VisualElement name="Options" enabled="true" class="LevelsDefault LevelListDefault" style="position: absolute; top: 627px; left: 532px;">
+            <ui:Button text="Level 1" name="Level1" class="menuButton" style="width: 200px; height: 90px;" />
+            <ui:Button text="Level 2" name="Level2" class="menuButton" style="width: 200px; height: 90px;" />
+            <ui:Button text="Level 3" name="Level3" class="menuButton" style="width: 200px; height: 90px;" />
+            <ui:Button text="Level 4&#10;" name="Level4" enable-rich-text="true" class="menuButton" style="width: 200px; height: 90px;" />
+            <ui:Button text="Back&#10;" name="BackButton" class="menuButton" style="translate: -210px 0;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

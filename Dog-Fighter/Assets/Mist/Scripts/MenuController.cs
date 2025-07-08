@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Controls the main menu UI using UI Toolkit.
@@ -19,7 +20,7 @@ public class MenuController : MonoBehaviour
     private VisualElement blackOverlay;
     private VisualElement LevelsList;
     private VisualElement postStart;
-
+    private VisualElement OptionsList;
     void OnEnable()
     {
         // Get root element from UI Document
@@ -30,7 +31,7 @@ public class MenuController : MonoBehaviour
         Prestart = root.Q<VisualElement>("PreStart");
         blackOverlay = root.Q<VisualElement>("BlackOverlay");
         LevelsList = root.Q<VisualElement>("Levels");
-
+        OptionsList = root.Q<VisualElement>("Options");
         Debug.Log("Found overlay: " + (blackOverlay != null));
 
         // Start screen hidden at first
@@ -108,8 +109,11 @@ public class MenuController : MonoBehaviour
                     kvp.Value.AddToClassList("SlideOutRight");
                     break;
 
-                case "QuitButton":
+                case "FeedbackButton":
                     kvp.Value.AddToClassList("SlideOutLeft");
+                    break;
+                case "QuitButton":
+                    kvp.Value.AddToClassList("SlideOutRight");
                     break;
             }
         }
@@ -127,10 +131,15 @@ public class MenuController : MonoBehaviour
 
                 case "OptionsButton":
                     clickedButton.AddToClassList("OptionsSelected");
+                    OptionsList.AddToClassList("LevelListActive");
+                    OptionsList.RemoveFromClassList("LevelListDefault");
                     break;
 
-                case "QuitButton":
+                case "FeedbackButton":
                     clickedButton.AddToClassList("ClickedPulse");
+                    break;
+                case "QuitButton":
+                    Application.Quit();
                     break;
             }
         }).StartingIn(300); // Allow other buttons to animate out first
@@ -142,7 +151,7 @@ public class MenuController : MonoBehaviour
     void OnLevelClicked(int levelNumber)
     {
         Debug.Log($"Level {levelNumber} button clicked!");
-        // Example: SceneManager.LoadScene($"Level{levelNumber}");
+        SceneManager.LoadScene($"Level{levelNumber}");
     }
 
     /// <summary>
