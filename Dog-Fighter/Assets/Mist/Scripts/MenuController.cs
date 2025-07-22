@@ -11,7 +11,7 @@ public class MenuController : MonoBehaviour
 {
     private bool startPressed = false;
 
-    public UIDocument uiDocument; // Assign this in the inspector
+    public UIDocument uiDocument;
 
     private Dictionary<string, Button> MainMenuButtons;
     private Dictionary<string, Button> LevelSelectButtons;
