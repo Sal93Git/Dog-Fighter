@@ -43,7 +43,7 @@ public class WaveSpawner : MonoBehaviour
         {
             t += Time.deltaTime;
             float fade = 0 + Mathf.Clamp01(t / FadeInTime);
-            Debug.Log(fade);
+            // Debug.Log(fade);
             mat.SetFloat("_Fade", fade);
             yield return null;
         }

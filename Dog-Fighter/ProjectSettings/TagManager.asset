@@ -6,6 +6,7 @@ TagManager:
   tags:
   - missile
   - MenuPath
+  - Enemy
   layers:
   - Default
   - TransparentFX

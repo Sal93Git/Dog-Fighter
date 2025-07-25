@@ -6,12 +6,12 @@ public class AIPlaneController : MonoBehaviour
     public float moveSpeed = 50f;
     public float turnSpeed = 2f;
     public float rollSpeed = 2f;
-
+    public int hitPoints = 9;
     public Vector3 startPosition;
     public Vector3 PatrolArea;
 
     public Vector3 evasionDestination;
-    
+    MachineGun machineGun;
     // public bool evading = false;
 
     public enum EnemyState{
@@ -22,17 +22,18 @@ public class AIPlaneController : MonoBehaviour
     }
 
     public EnemyState currentState;
-
+    float distanceToPlayer;
     void Start()
     {
         startPosition = transform.position;
         target = GameObject.FindGameObjectWithTag("Player").transform;
         currentState = EnemyState.Chasing;
+        machineGun = this.gameObject.GetComponent<MachineGun>();
     }
     void Update()
     {
         // Calculate distance to player target 
-        float distanceToPlayer = Vector3.Distance(transform.position, target.position);
+        distanceToPlayer = Vector3.Distance(transform.position, target.position);
 
         // Use value of distanceToPlayer to decide on which state to switch to
         if(distanceToPlayer > 180f)
@@ -99,13 +100,17 @@ public class AIPlaneController : MonoBehaviour
         offsetResetTimer -= Time.deltaTime;
         if (offsetResetTimer <= 0f)
         {
-            chaseOffset = target.right * Random.Range(-20f, 20f) + target.up * Random.Range(-5f, 5f);
+            // chaseOffset = target.right * Random.Range(-20f, 20f) + target.up * Random.Range(-5f, 5f);
+            chaseOffset = target.right * Random.Range(-10f, 10f) + target.up * Random.Range(-5f, 5f);
             offsetResetTimer = offsetResetInterval;
         }
 
         Vector3 desiredPosition = target.position + chaseOffset;
         Vector3 targetDir = (desiredPosition - transform.position).normalized;
-
+        if(distanceToPlayer < 50f && distanceToPlayer > 10f)
+        {
+            Attack();
+        }
         MoveToDestination(targetDir);
     }
 
@@ -128,7 +133,17 @@ public class AIPlaneController : MonoBehaviour
 
     void Attack()
     {
-        // Attack code - should maybe combine with chase?
+        machineGun.Shoot();
+    }
+
+    public void applyDamage(int damageAmount)
+    {
+        hitPoints -= damageAmount;
+
+        if(hitPoints <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
 

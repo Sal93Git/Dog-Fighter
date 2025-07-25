@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Sal/saltestscene.unity
     guid: dcd93ed87afb1ce45b9fa7964b8a22a7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Develop/Prototype1.unity
     guid: d27cbb67d0c4e1a41805c1ebfd8497cb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Mist/Scenes/MainMenu.unity
     guid: 37b5c97b4af26884f89980ae668811cf
+  - enabled: 1
+    path: Assets/Develop/MainMenu.unity
+    guid: 4d8d48bd3af9faa4bbaa94c09546b836
   - enabled: 1
     path: Assets/Develop/Level1.unity
     guid: 53be72ae521b676429545d8e8646643e
