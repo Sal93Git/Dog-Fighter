@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class levelSceneManager : MonoBehaviour
 {
@@ -14,12 +15,18 @@ public class levelSceneManager : MonoBehaviour
 
     int planesDefeated = 0;
 
+    public TMP_Text textBox; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
     }
 
+    void Update()
+    {
+        textBox.text = "Enemies Defeated : "+planesDefeated.ToString()+" / "+planesToDefeat.ToString();
+    }
 
     public void returnToMainMenu()
     {   

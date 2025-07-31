@@ -7,7 +7,7 @@ public class PlaneController : MonoBehaviour
     [SerializeField]  float rotationSpeed = 15f;
     [SerializeField]  float topFlightSpeed = 15f;
     [SerializeField]  float currentSpeed = 0;
-    [SerializeField] int planeHitPoints = 100;
+    public int planeHitPoints = 100;
 
     private float pitch;
     private float roll;
