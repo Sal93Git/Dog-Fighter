@@ -16,6 +16,6 @@ public class AnimationController : MonoBehaviour
         
         float speed = (transform.position - lastPosition).magnitude / Time.deltaTime;
         lastPosition = transform.position;
-        Propeller.transform.Rotate(Vector3.up, (speed * RotationSpeed) * Time.deltaTime);   
+        Propeller.transform.Rotate(Vector3.forward, (speed * RotationSpeed) * Time.deltaTime);   
     }
 }

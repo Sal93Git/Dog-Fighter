@@ -7,10 +7,11 @@
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="PostStart" style="flex-grow: 1; background-color: rgb(0, 255, 255); top: 0%; align-items: center; align-content: flex-start; transition-duration: 1s; display: flex; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/dogfighterbg.jpg?fileID=2800000&amp;guid=1b10aace5f120ac4a87e91860d421591&amp;type=3#dogfighterbg&quot;);">
+        <ui:VisualElement name="Controls" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/controlscheme.png?fileID=2800000&amp;guid=93ba74175851f154e93b2aac77135015&amp;type=3#controlscheme&quot;); -unity-background-scale-mode: scale-to-fit; -unity-slice-type: tiled; flex-direction: column-reverse; align-items: auto; justify-content: center; position: absolute; height: 664px; width: 829px; top: 530px; left: 11px;" />
         <ui:VisualElement name="Buttons" focusable="true" enabled="true" class="LevelSelectDefault" style="flex-direction: column; top: 57%; right: auto; display: flex; visibility: visible; position: absolute; left: 45%; opacity: 1;">
             <ui:Button text="Level Select" name="LevelSelectBut" class="menuButton LevelSelectDefault" style="transition-duration: 1s;" />
             <ui:Button text="Options" name="OptionsBut" class="menuButton" style="transition-duration: 1s;" />
-            <ui:Button text="Feedback&#10;" name="FeedbackButton" class="menuButton" style="left: auto; top: auto; -unity-text-align: middle-center; height: 90px; align-items: center; transition-duration: 2s;" />
+            <ui:Button text="Feedback&#10;" name="FeedbackBut" class="menuButton" style="left: auto; top: auto; -unity-text-align: middle-center; height: 90px; align-items: center; transition-duration: 2s;" />
             <ui:Button text="Quit&#10;" name="QuitBut" class="menuButton" style="left: auto; top: auto; -unity-text-align: middle-center; height: 90px; align-items: center; transition-duration: 2s;" />
         </ui:VisualElement>
         <ui:VisualElement name="Levels" enabled="true" class="LevelsDefault LevelListDefault" style="position: absolute; top: 627px; left: 532px;">
@@ -20,7 +21,6 @@
             <ui:Button text="Level 4&#10;" name="Level4" enable-rich-text="true" class="menuButton" style="width: 200px; height: 90px;" />
             <ui:Button text="Back&#10;" name="BackButton" class="menuButton" style="translate: -210px 0;" />
         </ui:VisualElement>
-        <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/DogFighterLogo.png?fileID=2800000&amp;guid=472367589bab2324d87f1ecd30d02127&amp;type=3#DogFighterLogo&quot;); width: 1052px; -unity-background-scale-mode: scale-to-fit; translate: 0 -329px; position: absolute; top: 352px; height: 528px; left: 428px;" />
         <ui:VisualElement name="Options" enabled="true" class="LevelsDefault LevelListDefault" style="position: absolute; top: 627px; left: 532px;">
             <ui:Button text="Level 1" name="Level1" class="menuButton" style="width: 200px; height: 90px;" />
             <ui:Button text="Level 2" name="Level2" class="menuButton" style="width: 200px; height: 90px;" />
@@ -28,5 +28,7 @@
             <ui:Button text="Level 4&#10;" name="Level4" enable-rich-text="true" class="menuButton" style="width: 200px; height: 90px;" />
             <ui:Button text="Back&#10;" name="BackButton" class="menuButton" style="translate: -210px 0;" />
         </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Mist/Assets/UI/DogFighterLogo.png?fileID=2800000&amp;guid=472367589bab2324d87f1ecd30d02127&amp;type=3#DogFighterLogo&quot;); width: 1052px; -unity-background-scale-mode: scale-to-fit; translate: 0 -329px; position: absolute; top: 352px; height: 528px; left: 428px;" />
+        <ui:Label text="Level 1 Objective: defeat 3 enemies" name="ObjText" picking-mode="Ignore" style="height: 181px; width: 920px; font-size: 55px; position: absolute; top: 485px; left: 474px; -unity-text-outline-width: -210px; -unity-font-definition: url(&quot;project://database/Assets/Mist/Assets/Font/Matemasie-Regular.ttf?fileID=12800000&amp;guid=97185813d59732748b78040e584b3f40&amp;type=3#Matemasie-Regular&quot;);" />
     </ui:VisualElement>
 </ui:UXML>

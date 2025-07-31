@@ -107,3 +107,18 @@
     width: 200px;
     background-image: url("project://database/Assets/Mist/Assets/UI/LargeButtonClicked.png?fileID=2800000&guid=82229bc1f4bc92b4a9de028b6bce4c74&type=3#LargeButtonClicked");
 }
+
+.menuButton.disabled {
+    height: 90px;
+    transition-property: all;
+    position: relative;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    background-image: url("project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&guid=75447edbbede89046ac67ec299c29c64&type=3#LargeButton");
+    -unity-font-definition: url("project://database/Assets/Mist/Assets/Font/Matemasie-Regular.ttf?fileID=12800000&guid=97185813d59732748b78040e584b3f40&type=3#Matemasie-Regular");
+    font-size: 27px;
+    -unity-background-image-tint-color: rgb(96, 81, 81);
+    pointer-events: none;
+}
