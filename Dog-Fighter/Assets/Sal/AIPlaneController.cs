@@ -9,7 +9,7 @@ public class AIPlaneController : MonoBehaviour
     public int hitPoints = 9;
     public Vector3 startPosition;
     public Vector3 PatrolArea;
-
+    public levelSceneManager sceneManager;
     public Vector3 evasionDestination;
     MachineGun machineGun;
     // public bool evading = false;
@@ -142,6 +142,7 @@ public class AIPlaneController : MonoBehaviour
 
         if(hitPoints <= 0)
         {
+            sceneManager.incrementCountDefeatedEnemy();
             Destroy(gameObject);
         }
     }
