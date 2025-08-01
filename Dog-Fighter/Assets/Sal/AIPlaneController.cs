@@ -148,7 +148,7 @@ public class AIPlaneController : MonoBehaviour
     }
 
 
-    Vector3 GetRandomPositionFarFrom(Vector3 origin, float minDistance = 40f, float maxDistance = 70f)
+    Vector3 GetRandomPositionFarFrom(Vector3 origin, float minDistance = 80f, float maxDistance = 100f)
     {
         Vector2 randomDirection2D = Random.insideUnitCircle.normalized;
         float randomDistance = Random.Range(minDistance, maxDistance);
