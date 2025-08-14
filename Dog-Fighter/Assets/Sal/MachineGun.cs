@@ -18,6 +18,9 @@ public class MachineGun : MonoBehaviour
     [SerializeField] float ShootDelay = 0.25f;
     [SerializeField] LayerMask mask;
 
+    [SerializeField] AudioSource gunAudio; //TEMP TO JUST GET SOUND IN
+
+
     public target_option opponent;
     public int Damage = 3;
     float lastShootTime;
@@ -36,6 +39,12 @@ public class MachineGun : MonoBehaviour
         if (lastShootTime + ShootDelay < Time.time)
         {
             ShootingSytem.Play();
+        if (gunAudio != null) //quick and dirty gun sound
+        {
+            gunAudio.pitch = Random.Range(0.95f, 1.05f);
+            gunAudio.Play();
+            
+        }
             Vector3 direction = GetDirection();
             RaycastHit hit;
 
