@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Dog-Fighter/Assets/Assets.meta
 guid: 8761cd4e79b38ec46b528a557b59b080
+=======
+guid: 206dc2b35058ebe4f9acbd0f094b24ad
+>>>>>>> Stashed changes:Dog-Fighter/Assets/Mist/Scripts/DataPersistence.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
