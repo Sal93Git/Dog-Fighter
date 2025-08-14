@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 74803df3014437344b403d6ddc8d4960
+=======
+<<<<<<< Updated upstream:Dog-Fighter/Assets/Assets/Enemies.meta
+guid: db4b423af170937428fdf286309a8c20
+=======
+guid: f73bee5c44c7d484195d3c2c67ff512e
+>>>>>>> Stashed changes:Dog-Fighter/Assets/Resources/Enemies.meta
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
