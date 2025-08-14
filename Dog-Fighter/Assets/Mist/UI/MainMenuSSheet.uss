@@ -1,0 +1,123 @@
+:root {
+}
+
+#BlackOverlay {
+    opacity: 0;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+#BlackOverlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menuButton {
+    height: 90px;
+    transition-property: all;
+    position: relative;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    background-image: url("project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&guid=75447edbbede89046ac67ec299c29c64&type=3#LargeButton");
+    -unity-font-definition: url("project://database/Assets/Mist/Assets/Font/Matemasie-Regular.ttf?fileID=12800000&guid=97185813d59732748b78040e584b3f40&type=3#Matemasie-Regular");
+    font-size: 27px;
+}
+
+.menuButton:active {
+    height: 90px;
+    background-image: url("project://database/Assets/Mist/Assets/UI/LargeButtonClicked.png?fileID=2800000&guid=82229bc1f4bc92b4a9de028b6bce4c74&type=3#LargeButtonClicked");
+}
+
+.LevelSelectDefault {
+}
+
+.SlideOutLeft {
+    height: 90px;
+    top: 0;
+    transform-origin: center;
+    translate: -1197px 0;
+    opacity: 0;
+}
+
+.SlideOutRight {
+    height: 90px;
+    top: 0;
+    transform-origin: center;
+    translate: 1314px 0;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.LevelSelected {
+    transition-duration: 1s;
+    translate: -206px 0;
+}
+
+.LevelsActive {
+    transition-duration: 1s;
+    translate: 334px -3px;
+    left: -175px;
+    top: 249px;
+}
+
+.OptionsSelected {
+    transition-duration: 1s;
+    translate: -206px -104%;
+    top: auto;
+}
+
+.LevelListActive {
+    transition-duration: 1s;
+    top: 384px;
+    left: 520px;
+    opacity: 1;
+    position: absolute;
+    translate: 343px 0;
+}
+
+.LevelListDefault {
+    position: absolute;
+    top: 386px;
+    left: 519px;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.PostStartHidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+.PreStartHidden {
+    display: none;
+    opacity: 0;
+}
+
+.menuButton:hover {
+    height: 90px;
+    transition-property: all;
+    position: relative;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    background-image: url("project://database/Assets/Mist/Assets/UI/LargeButtonClicked.png?fileID=2800000&guid=82229bc1f4bc92b4a9de028b6bce4c74&type=3#LargeButtonClicked");
+}
+
+.menuButton.disabled {
+    height: 90px;
+    transition-property: all;
+    position: relative;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    background-image: url("project://database/Assets/Mist/Assets/UI/LargeButton.png?fileID=2800000&guid=75447edbbede89046ac67ec299c29c64&type=3#LargeButton");
+    -unity-font-definition: url("project://database/Assets/Mist/Assets/Font/Matemasie-Regular.ttf?fileID=12800000&guid=97185813d59732748b78040e584b3f40&type=3#Matemasie-Regular");
+    font-size: 27px;
+    -unity-background-image-tint-color: rgb(136, 136, 136);
+}
