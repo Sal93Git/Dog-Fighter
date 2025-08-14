@@ -42,7 +42,8 @@ public class MenuController : MonoBehaviour
         {
             { "LevelSelectButton", root.Q<Button>("LevelSelectBut") },
             { "OptionsButton", root.Q<Button>("OptionsBut") },
-            { "QuitButton", root.Q<Button>("QuitBut") }
+            { "QuitButton", root.Q<Button>("QuitBut") },
+            { "FeedbackButton", root.Q<Button>("FeedbackBut") }
         };
 
         LevelSelectButtons = new Dictionary<string, Button>
@@ -72,6 +73,11 @@ public class MenuController : MonoBehaviour
         blackOverlay.RemoveFromClassList("visible");
         blackOverlay.style.opacity = 0f;
         blackOverlay.style.visibility = Visibility.Hidden;
+
+        //disable levels 2-4
+        LevelSelectButtons["Level2Button"].AddToClassList("disabled");
+        LevelSelectButtons["Level3Button"].AddToClassList("disabled");
+        LevelSelectButtons["Level4Button"].AddToClassList("disabled");
     }
 
     /// <summary>
@@ -137,6 +143,7 @@ public class MenuController : MonoBehaviour
 
                 case "FeedbackButton":
                     clickedButton.AddToClassList("ClickedPulse");
+                    Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSd8MKWOMuA_2iIXD7f5hb-E1bcO0lywVnXk3VztCRtpMRNy8g/viewform?usp=header");
                     break;
                 case "QuitButton":
                     Application.Quit();

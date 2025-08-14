@@ -433,6 +433,7 @@ MonoBehaviour:
   moveSpeed: 9
   turnSpeed: 0.9
   rollSpeed: 5
+  hitPoints: 9
   startPosition: {x: 0, y: 0, z: 0}
   PatrolArea: {x: 0, y: 0, z: 0}
   evasionDestination: {x: 0, y: 0, z: 0}
@@ -753,6 +754,7 @@ MonoBehaviour:
   moveSpeed: 12
   turnSpeed: 2
   rollSpeed: 2
+  hitPoints: 9
   startPosition: {x: 0, y: 0, z: 0}
   PatrolArea: {x: 0, y: 0, z: 0}
   evasionDestination: {x: 0, y: 0, z: 0}
@@ -883,6 +885,7 @@ MonoBehaviour:
   moveSpeed: 12
   turnSpeed: 2
   rollSpeed: 2
+  hitPoints: 9
   startPosition: {x: 0, y: 0, z: 0}
   PatrolArea: {x: 0, y: 0, z: 0}
   evasionDestination: {x: 0, y: 0, z: 0}

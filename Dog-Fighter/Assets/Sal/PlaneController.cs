@@ -7,14 +7,15 @@ public class PlaneController : MonoBehaviour
     [SerializeField]  float rotationSpeed = 15f;
     [SerializeField]  float topFlightSpeed = 15f;
     [SerializeField]  float currentSpeed = 0;
-    [SerializeField] int planeHitPoints = 100;
+    public int planeHitPoints = 100;
 
     private float pitch;
     private float roll;
 
     public List<GameObject> missiles = new List<GameObject>();
     public int maxMissileAmmo = 2;
-    
+    public levelSceneManager sceneManager;
+
     [SerializeField] private Transform pilotHead;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -85,6 +86,7 @@ public class PlaneController : MonoBehaviour
 
         if(planeHitPoints <= 0)
         {
+            sceneManager.activateLoseMenu();
             Destroy(gameObject);
         }
     }
