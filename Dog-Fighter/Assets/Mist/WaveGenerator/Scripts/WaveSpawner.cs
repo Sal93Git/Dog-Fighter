@@ -28,6 +28,7 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnWave()
     {
+        if (Player == null) return;
         Vector3 pos = transform.position = new Vector3(
             UnityEngine.Random.Range(-(Player.transform.position.x + XSpawnRange), (Player.transform.position.x + XSpawnRange)), transform.position.y, UnityEngine.Random.Range(-(Player.transform.position.z + zSpawnRange), (Player.transform.position.z + zSpawnRange)));
         GameObject wave = Instantiate(wavePrefab, pos, Quaternion.Euler(90, 0, 0)); //set x rotation here

@@ -67,6 +67,18 @@ public class PlaneController : MonoBehaviour
     
     }
 
+    public void replenishHp(int amount)
+    {
+        if(planeHitPoints < 100)
+        {
+            planeHitPoints += amount;
+            if(planeHitPoints > 100)
+            {
+                planeHitPoints = 100;
+            }
+        }
+    }
+
     void FireMissile()
     {
         if(missiles.Count > 0)

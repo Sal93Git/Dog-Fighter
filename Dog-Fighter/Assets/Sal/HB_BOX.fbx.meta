@@ -1,0 +1,307 @@
+fileFormatVersion: 2
+guid: b24040ba98ca53649bbcee3addcaed72
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dog_Emblem1
+    second: {fileID: 2100000, guid: 6b30b364b9a077848bfbc2aa97e39b60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HB_Body1
+    second: {fileID: 2100000, guid: 7e343cd190978e949962c6f843fb3aa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HB_Cross1
+    second: {fileID: 2100000, guid: 44ac35ad888b1e049881b2155e3b6a33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HB_Top
+    second: {fileID: 2100000, guid: f2e1dc6448b2a994ca66a405636f3dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Latch1
+    second: {fileID: 2100000, guid: 34535bc0b2629344786ebbee8f8e51a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Latch_Plate1
+    second: {fileID: 2100000, guid: 6bd0b824501aef34f8c1cd25c926ed16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Parachute3
+    second: {fileID: 2100000, guid: d65b592d16ebb3e40b40d423b978e5d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Parachute_String1
+    second: {fileID: 2100000, guid: 2d921ab10ef64284bb0ee77676733e1a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Cross_Height
+    second: {fileID: 2800000, guid: 2a3191a2428f5ab498ead4959e84f6a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Cross_Metallic
+    second: {fileID: 2800000, guid: 35438ddaa16fd424293af70dd9330d13, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Cross_Normal
+    second: {fileID: 2800000, guid: 368ea3bcdbbc9b44d885d33a90771dcf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Cross_Roughness
+    second: {fileID: 2800000, guid: a311a6145d32d9a4fb335d933b123d94, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Dog_emblem_Height
+    second: {fileID: 2800000, guid: d045b28724ebc1e4ebb4f6728a0eee7e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Dog_emblem_Metallic
+    second: {fileID: 2800000, guid: a87762929de18b74b9fe315e40127f07, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Dog_emblem_Normal
+    second: {fileID: 2800000, guid: 14595f0a8789e1d4cbcd735a23bf83d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Dog_emblem_Roughness
+    second: {fileID: 2800000, guid: 296a1a2f02b30f348be911794fa83021, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_HB_BODY_Height
+    second: {fileID: 2800000, guid: 292d33014ae11224d9ebffa802c9e78e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_HB_BODY_Metallic
+    second: {fileID: 2800000, guid: 4f9e76e15221ead4184069b2ad34c8e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_HB_BODY_Normal
+    second: {fileID: 2800000, guid: 176376d2ac2827c4e9a526528245f3dd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_HB_BODY_Roughness
+    second: {fileID: 2800000, guid: 1abfae00f73517145bdbdc1950006b80, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Latch_Plate_Height
+    second: {fileID: 2800000, guid: ee99bed71537fbd4b9537fe092a01fb0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Latch_Plate_Metallic
+    second: {fileID: 2800000, guid: bde8c4b9fee57f7449f0012fc80e68bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Latch_Plate_Normal
+    second: {fileID: 2800000, guid: 7fbc4d72bf598574b92ed02b4b35d8ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Latch_Plate_Roughness
+    second: {fileID: 2800000, guid: 70ee17f86f7a18a45b9077b0cad41832, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Latchh_Height
+    second: {fileID: 2800000, guid: 72f10108432924e43bc615f71f11a8b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Latchh_Metallic
+    second: {fileID: 2800000, guid: da82de22a7d85ae46b69f8922a49aa55, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Latchh_Normal
+    second: {fileID: 2800000, guid: 90b6552f657d6ca4fb1baa4fc09c1eeb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Latchh_Roughness
+    second: {fileID: 2800000, guid: be73fa61f044aed4784ebd443fb0b4df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Parachute2_Height
+    second: {fileID: 2800000, guid: d722881ded708204fb19355fff3c2bcf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Parachute2_Metallic
+    second: {fileID: 2800000, guid: fbf07062c93b2c94aa1fd3c4869952cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Parachute2_Normal
+    second: {fileID: 2800000, guid: ccf1e6e0790654a47a1b285e639df054, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Parachute2_Roughness
+    second: {fileID: 2800000, guid: 301c40fb027f4a34390d0c068988f112, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Parachute_String_Height
+    second: {fileID: 2800000, guid: 3f7b03336e4c5b9438dd5f8ac33a6086, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Parachute_String_Metallic
+    second: {fileID: 2800000, guid: a39102a4280237047977827d5c46832b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Parachute_String_Normal
+    second: {fileID: 2800000, guid: a123a179fcabc4f498689d2b4f7617c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Parachute_String_Roughness
+    second: {fileID: 2800000, guid: 44a4fbab4facba441b6ea9bf8c41404a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Plate_Top_Height
+    second: {fileID: 2800000, guid: b7692fe6872ec82488883323f8a580da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Plate_Top_Metallic
+    second: {fileID: 2800000, guid: 5636c6f2b6ecdcf45997d4839b3433f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Plate_Top_Normal
+    second: {fileID: 2800000, guid: 6fca11f7d44fa88429746734b8f21589, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: adededed_Plate_Top_Roughness
+    second: {fileID: 2800000, guid: 16aa56559b0cc5a42b22e348011a2837, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

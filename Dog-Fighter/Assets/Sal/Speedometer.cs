@@ -9,6 +9,8 @@ public class Speedometer : MonoBehaviour
     
     void Update()
     {
+        if (player == null) return;
+        
         valueToDisplay = player.GetComponent<PlaneController>().getCurrentSpeed()*10;
         textBox.text = Mathf.RoundToInt(valueToDisplay).ToString()+"KM/H";
     }

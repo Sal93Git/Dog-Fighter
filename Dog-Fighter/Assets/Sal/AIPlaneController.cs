@@ -32,6 +32,7 @@ public class AIPlaneController : MonoBehaviour
     }
     void Update()
     {
+        if (target == null) return;
         // Calculate distance to player target 
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
 
@@ -46,7 +47,7 @@ public class AIPlaneController : MonoBehaviour
             currentState = EnemyState.Chasing;
         }
 
-        if(distanceToPlayer < 10f)
+        if(distanceToPlayer < 15f)
         {
             currentState = EnemyState.Evading;
         }
@@ -101,13 +102,13 @@ public class AIPlaneController : MonoBehaviour
         if (offsetResetTimer <= 0f)
         {
             // chaseOffset = target.right * Random.Range(-20f, 20f) + target.up * Random.Range(-5f, 5f);
-            chaseOffset = target.right * Random.Range(-10f, 10f) + target.up * Random.Range(-5f, 5f);
+            chaseOffset = target.right * Random.Range(-5f, 5f) + target.up * Random.Range(-2.5f, 2.5f);
             offsetResetTimer = offsetResetInterval;
         }
 
         Vector3 desiredPosition = target.position + chaseOffset;
         Vector3 targetDir = (desiredPosition - transform.position).normalized;
-        if(distanceToPlayer < 50f && distanceToPlayer > 10f)
+        if(distanceToPlayer < 60f && distanceToPlayer > 15f)
         {
             Attack();
         }
@@ -148,7 +149,7 @@ public class AIPlaneController : MonoBehaviour
     }
 
 
-    Vector3 GetRandomPositionFarFrom(Vector3 origin, float minDistance = 80f, float maxDistance = 100f)
+    Vector3 GetRandomPositionFarFrom(Vector3 origin, float minDistance = 100f, float maxDistance = 115f)
     {
         Vector2 randomDirection2D = Random.insideUnitCircle.normalized;
         float randomDistance = Random.Range(minDistance, maxDistance);
