@@ -9,6 +9,8 @@ public class hpDisplay : MonoBehaviour
     
     void Update()
     {
+        if (player == null) return;
+        
         valueToDisplay = player.GetComponent<PlaneController>().planeHitPoints;
         textBox.text = "HP : "+Mathf.RoundToInt(valueToDisplay).ToString();
     }

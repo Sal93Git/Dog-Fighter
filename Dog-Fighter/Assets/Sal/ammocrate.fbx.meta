@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: 2ed448f32ead05042a346587c3e3add5
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottom
+    second: {fileID: 2100000, guid: a777366875ec32147a0723170c8b1a02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottom_panels1
+    second: {fileID: 2100000, guid: 7233071d45adde4409d35796f07308b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Front2
+    second: {fileID: 2100000, guid: 0a43483062d0599479dab2917b5b60ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Parachute3
+    second: {fileID: 2100000, guid: c35beaacc8d3ecf4a9ebff9f2ab1af41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rope
+    second: {fileID: 2100000, guid: a5182ee6e3a31954490bd56e10130e88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screw
+    second: {fileID: 2100000, guid: 4bef25ec1e6a5ca4d85a20d5e0f9ee39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Top2
+    second: {fileID: 2100000, guid: ddfba0db38c8b094780a4d455ae39792, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Top_latch
+    second: {fileID: 2100000, guid: 760f8e8d272313a40b86d1ccfdd85288, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface11
+    second: {fileID: 2100000, guid: c4bf2fa49b587154eb901b35b86086bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface6
+    second: {fileID: 2100000, guid: bbee9cd4513add846978309cab021b03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface7
+    second: {fileID: 2100000, guid: a9891f69035bb114fab9edd7af153ef1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paw
+    second: {fileID: 2100000, guid: b91f5018c828bc641a33a2f54ed71323, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side1
+    second: {fileID: 2100000, guid: d23980d4badf0f8449156b08531fef2a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Back1_Height
+    second: {fileID: 2800000, guid: 6874aa1b9447abe4b88f29aba3a17b95, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Back1_Metallic
+    second: {fileID: 2800000, guid: 9b9b4a9dafdb4444da40a6f3af9c670c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Back1_Normal
+    second: {fileID: 2800000, guid: 3cfc53034c5e63a4a8bb062af2637dd7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Back1_Roughness
+    second: {fileID: 2800000, guid: 2c77ab2659f4f2f4bb50a5d5a4fe1be7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Bottom_panels_Height
+    second: {fileID: 2800000, guid: dc82f133e1bf3114fbe3d361835a5203, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Bottom_panels_Metallic
+    second: {fileID: 2800000, guid: ccba2864a693e7746b4b50c2cf05460b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Bottom_panels_Normal
+    second: {fileID: 2800000, guid: 4257f4a51a33ebf4a888e7931f687a22, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Bottom_panels_Roughness
+    second: {fileID: 2800000, guid: 78baf9fcc296e9c43af35396877e412c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Front1_Height
+    second: {fileID: 2800000, guid: 42c7d1c8f7e48be4c902c3e190d7f018, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Front1_Metallic
+    second: {fileID: 2800000, guid: 90a1695d61caca442b22fe564ccbf364, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Front1_Normal
+    second: {fileID: 2800000, guid: b39bad19a774b60419e992fe3244d9b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Front1_Roughness
+    second: {fileID: 2800000, guid: 5f8152efa3a10394a9cffec5997565af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Latch_plate_Height
+    second: {fileID: 2800000, guid: 6345f37ede86ca74fbb514b3a4837dfb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Latch_plate_Metallic
+    second: {fileID: 2800000, guid: 531947963c039044a8db040d7f336287, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Latch_plate_Normal
+    second: {fileID: 2800000, guid: bd78fdc01dda5b840974a3bc7a975bb9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Latch_plate_Roughness
+    second: {fileID: 2800000, guid: 1e26b1ab5dccec64787f9ec060acc07b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Metal_Screw_Height
+    second: {fileID: 2800000, guid: 1fa7ff12aa1d0954c942b0105d44de99, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Metal_Screw_Metallic
+    second: {fileID: 2800000, guid: f4b69538e3d85594096da2b4f561c981, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Metal_Screw_Normal
+    second: {fileID: 2800000, guid: ed834484e161f2443942390be183503d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Metal_Screw_Roughness
+    second: {fileID: 2800000, guid: 12683a5a94a3c5a4dac9f04029f62b43, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Parachute2_Height
+    second: {fileID: 2800000, guid: 5cfabd312569f1049a064941d5094420, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Parachute2_Metallic
+    second: {fileID: 2800000, guid: 5f31d813336ed5d4c8835b1d2fe70eb5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Parachute2_Normal
+    second: {fileID: 2800000, guid: 5131d917fa474f5408219117e21bc1f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Parachute2_Roughness
+    second: {fileID: 2800000, guid: a8575e4a98613ee41be1aadc885cdc03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_ParachuteRope_Height
+    second: {fileID: 2800000, guid: f75d430ac0f5a8d4fb031e22e2895ee9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_ParachuteRope_Metallic
+    second: {fileID: 2800000, guid: 7c3a6888dbfa46843b4e30d86240fdb2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_ParachuteRope_Normal
+    second: {fileID: 2800000, guid: a1c21b5b2f593484eb2ae73c2c0e5650, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_ParachuteRope_Roughness
+    second: {fileID: 2800000, guid: d01e7efd2df779c4c99f939ba8017419, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Paw_peintr_Height
+    second: {fileID: 2800000, guid: a1d46a1f85acc4b47b47cecabf736d28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Paw_peintr_Metallic
+    second: {fileID: 2800000, guid: 929496928f7dfe744aced61c069088da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Paw_peintr_Normal
+    second: {fileID: 2800000, guid: e612eb917f45752419e6ab29803d91f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Paw_peintr_Roughness
+    second: {fileID: 2800000, guid: db3a5eae8fabc7b42b83c1d1816b81cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Side_Height
+    second: {fileID: 2800000, guid: 81fe4875bb511d24c84095dd9247814a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Side_Metallic
+    second: {fileID: 2800000, guid: e7db124eb10faa645ad872d8cd1a832c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Side_Normal
+    second: {fileID: 2800000, guid: 1620aafa944d74a4389c7ddd6cbc54a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Side_Roughness
+    second: {fileID: 2800000, guid: db0fa577a299f61488a622f0378f4936, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Top1_Height
+    second: {fileID: 2800000, guid: 4ed7a2df6942dbb4283bdfc682c19aec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Top1_Metallic
+    second: {fileID: 2800000, guid: 9b1dde4fa95d7df4281bd0fde82ccd6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Top1_Normal
+    second: {fileID: 2800000, guid: dc5996de9cb8c6941a68fcbcc7dd050d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Top1_Roughness
+    second: {fileID: 2800000, guid: 8fc0d50c17a8085428258f349d1549d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Top_Panels1_Height
+    second: {fileID: 2800000, guid: 5d2a84569e3ad3940ab9e3a9feb7e2ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Top_Panels1_Metallic
+    second: {fileID: 2800000, guid: 0c047e1784be5924191f1a5278354a23, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Top_Panels1_Normal
+    second: {fileID: 2800000, guid: 3c2aa00592b6c7040a53075067b98e46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_Top_Panels1_Roughness
+    second: {fileID: 2800000, guid: e9ae065c6d3349d4294c6ff3142ffb2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_bottompanels_Height
+    second: {fileID: 2800000, guid: 6752ddc9b0f9912429a2e59c992682d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_bottompanels_Metallic
+    second: {fileID: 2800000, guid: 791228f4b22affe439b4275c03c5b9b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_bottompanels_Normal
+    second: {fileID: 2800000, guid: 3b309b82d40ba014d9aace727312ace5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_bottompanels_Roughness
+    second: {fileID: 2800000, guid: 3097da414e41b5b4f90e1eda847dee38, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_latch_Height
+    second: {fileID: 2800000, guid: 7133733e8bfad3143b35c4061742b82f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_latch_Metallic
+    second: {fileID: 2800000, guid: 8a75cea681fded94fb2567780436c8a1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_latch_Normal
+    second: {fileID: 2800000, guid: d6d33111f64a2b445b5d8c40ea3240b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ammooo_latch_Roughness
+    second: {fileID: 2800000, guid: 230036fdcc8b2c14bac21a4ab93b29ec, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

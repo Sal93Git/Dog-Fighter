@@ -20,7 +20,7 @@ public class MachineGun : MonoBehaviour
 
     [SerializeField] AudioSource gunAudio; //TEMP TO JUST GET SOUND IN
 
-
+    public int ammo = 1000;
     public target_option opponent;
     public int Damage = 3;
     float lastShootTime;
@@ -28,9 +28,22 @@ public class MachineGun : MonoBehaviour
     void Update()
     {
         // Debug.Log(opponent.ToString());
-        if (Input.GetMouseButton(1) && gameObject.CompareTag("Player"))
+        if (Input.GetMouseButton(1) && gameObject.CompareTag("Player") && ammo > 0)
         {
             Shoot();
+            ammo--;
+        }
+    }
+
+    public void replenishAmmo(int amount)
+    {
+        if(ammo < 1000)
+        {
+            ammo += amount;
+            if(ammo > 1000)
+            {
+                ammo = 1000;
+            }
         }
     }
 
